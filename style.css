@@ -1,1 +1,42 @@
+ #intro-header {
+     height: 40vw;
+     background-image: url(img/rodvig.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+ }
 
+ .logo img {
+     width: 100%;
+     max-width: 500px;
+ }
+
+ nav {
+     background-color: whitesmoke;
+     width: 100vw;
+     z-index: 10;
+     margin-bottom: 4vw;
+     display: grid;
+     align-items: center;
+ }
+
+ .navbar {
+     list-style: none;
+     display: flex;
+     z-index: 10;
+ }
+
+ body {
+     width: 100%;
+     height: 100%;
+ }
+
+ header {
+     position: sticky;
+     top: 0;
+     left: 0;
+     z-index: 10;
+ }
+
+ .nav-item {
+     margin-top: .7vw;
+ }

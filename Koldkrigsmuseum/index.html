@@ -5,15 +5,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalklandet</title>
+    <!--bootstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--inline css-->
     <link rel="stylesheet" href="/style.css">
+    <!--anchor hover effect stylesheet-->
+    <link href="/anchorHoverEffect.css" rel="stylesheet">
 </head>
 
 <body>
-    <section id="intro-header">
+    <section id="intro-header" class="">
     </section>
+    <header>
+        <nav>
+            <ul class="navbar container">
+                <li class="nav-item">(LOGO)</li>
+                <li class="nav-item"><a href="koldkrigsmuseum/index.html">Koldkrigsmuseum</a></li>
+                <li class="nav-item"><a href="#">Stevns Klint</a></li>
+                <li class="nav-item"><a href="#">Geomuseum Faxe</a></li>
+                <li class="nav-item"><a href="#">For skoler</a></li>
+                <li class="nav-item"><a href="#">Begivenheder</a></li>
 
-    <header></header>
+            </ul>
+            <ul class="navbar container undermenu">
+                <li class="nav-item"><a href="">Koldkrigsmuseum</a></li>
+                <li class="nav-item"><a href="#">Stevns Klint</a></li>
+                <li class="nav-item"><a href="#">Geomuseum Faxe</a></li>
+                <li class="nav-item"><a href="#">For skoler</a></li>
+                <li class="nav-item"><a href="#">Begivenheder</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
     <section id="koldkrigs_intro">
@@ -98,13 +120,19 @@
     <!--script-->
     <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
     <!--popper-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!--bootstrap-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!--inline script-->
     <script src="/script.js"></script>
+    <!--anchor hover effect script-->
+    <script src="/anchorHoverEffect.js"></script>
+    <script>
+        $(".navbar a").anchorHoverEffect({ //vælger alle links i elementet .navbar med jQuery
+            type: 'roller3d' //vælger en af hovereffect animationerne fra anchorHoverEffect.css
+        });
+    </script>
     <!--script slut-->
-</body>
-
-</html>
+</body></html>
