@@ -1,17 +1,6 @@
-/*!
-*  anchor hover effect plugin ( Make your anchor tag fancy and animated)
-* Original author: Satinder Singh 
-* Blog: http://codepedia.info
-* Demo: 
-* Further changes, comments: 
-* Licensed under the MIT license
-*/
-
-
-
 /* Roller 3d effect  */
 .roller3d {
-    color: #313131;
+    color: #292828;
     display: inline-block;
     font-size: 18px;
     font-weight: bold;
@@ -24,7 +13,7 @@
 .roller3d:hover {
     background: none;
     text-shadow: none;
-    color: #313131;
+    color: #292828;
 }
 
 .roller3d span {
@@ -66,7 +55,7 @@
     color: white;
     /*    background: #a533fd;  */
 
-    background: #313131;
+    background: #292929;
     -webkit-transform-origin: 50% 0%;
     -moz-transform-origin: 50% 0%;
     -ms-transform-origin: 50% 0%;
@@ -75,11 +64,6 @@
     -moz-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
     -ms-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
     transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
-}
-
-.active {
-    background-color: #313131;
-    color: white;
 }
 
 /*  Bracket effects    */
@@ -128,13 +112,13 @@
 
 .flip {
     height: 1em;
-    /*    padding: 0 4px;*/
+    padding: 0 4px;
     position: relative;
 }
 
 .flip a {
     overflow: hidden;
-    /*    padding: 2px 4px;*/
+    padding: 2px 4px;
     /*  height: 1em;*/
 
     position: relative;
@@ -143,7 +127,7 @@
 }
 
 .flip a span {
-    /*    padding: 2px 4px;*/
+    padding: 2px 4px;
     position: relative;
     display: inline-block;
     -webkit-transition: -webkit-transform 0.3s;
@@ -201,4 +185,33 @@
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
     transform: translateY(0px);
+}
+
+.ulDefault a {
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 15px 25px;
+    outline: medium none;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.ulDefault {
+    float: left;
+    margin: 0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.ulDefault li {
+    float: left;
+    list-style: none;
+    text-align: center;
+    width: 215px;
 }

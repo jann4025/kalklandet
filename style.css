@@ -1,42 +1,1245 @@
- #intro-header {
-     height: 40vw;
-     background-image: url(img/rodvig.jpg);
-     background-size: cover;
-     background-attachment: fixed;
- }
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
- .logo img {
-     width: 100%;
-     max-width: 500px;
- }
+html {
+    scroll-behavior: smooth;
+}
 
- nav {
-     background-color: whitesmoke;
-     width: 100vw;
-     z-index: 10;
-     margin-bottom: 4vw;
-     display: grid;
-     align-items: center;
- }
 
- .navbar {
-     list-style: none;
-     display: flex;
-     z-index: 10;
- }
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    word-break: keep-all;
+    margin: 0 auto;
+    padding: 0 auto;
+    /*    border: red solid 1px;*/
+}
 
- body {
-     width: 100%;
-     height: 100%;
- }
 
- header {
-     position: sticky;
-     top: 0;
-     left: 0;
-     z-index: 10;
- }
+p {
+    font-family: 'Roboto', sans-serif;
+}
 
- .nav-item {
-     margin-top: .7vw;
- }
+h1,
+h2 {
+    color: rgb(46, 43, 38);
+    font-weight: 900;
+}
+
+.kalk-row {
+
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.kalk-col {
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+
+.sand-bg {
+    background-color: rgb(225, 218, 200);
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    text-align: center;
+    padding: 10vw;
+    margin: auto;
+    width: 370px;
+}
+
+.icon p {
+    width: 80%;
+}
+
+.icon a:hover {
+    opacity: .65;
+
+}
+
+#forside img {
+    width: 100%;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+
+#forside .three-row,
+footer .three-row {}
+
+
+
+.top-bottom-padding-5 {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+.top-padding-5 {
+    padding-top: 5vw;
+}
+
+.bottom-padding-5 {
+    padding-bottom: 5vw;
+}
+
+.left-right-padding-10 {
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+#intro-header {
+    height: 100vh;
+    background-image: url(img/rodvig.jpg);
+    filter: brightness(110%);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-style: italic;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: #efeeee;
+}
+
+#intro-header h1 {
+    font-size: 8em;
+    color: #efeeee;
+    font-weight: 900;
+
+}
+
+#intro-header p {
+    font-size: 1.4em;
+}
+
+#intro-header .content {
+    display: grid;
+    justify-items: center;
+    z-index: 14;
+
+}
+
+#intro-header .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(21, 21, 21, 0.4);
+    z-index: 1;
+}
+
+
+
+#intro-header-undersider {
+    height: 80vh;
+    background-image: url(img/rodvig.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-style: italic;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: #efeeee;
+}
+
+#intro-header-undersider .content {
+    text-align: center;
+
+}
+
+
+
+
+#intro-header-undersider h1 {
+    font-size: 5em;
+    color: #efeeee;
+    z-index: 2;
+}
+
+#intro-header-undersider p {
+    font-size: 1.4em;
+}
+
+#intro-header-undersider div {
+    line-height: 0;
+    z-index: 2;
+
+}
+
+.koldkrigsmuseum-intro {
+    background-image: url(img/stevnsfort.jpg) !important;
+}
+
+#intro-header-undersider .overlay {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(21, 21, 21, 0.24);
+    z-index: 1;
+}
+
+.koldkrigsmuseum-intro {
+    background-image: url(img/stevnsfort.jpg) !important;
+}
+
+.stevnsklint-intro {
+    background-image: url(img/stevnsklint.jpg) !important;
+}
+
+#oplev_kalklandet {
+    font-family: 'poppins';
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+
+}
+
+
+
+.koldkrigsmuseum .overlay {
+    position: absolute;
+    width: 100%;
+    height: 660px;
+    background-color: rgba(21, 21, 21, 0.6);
+    z-index: 1;
+}
+
+.stevns .overlay {
+    position: absolute;
+    width: 100%;
+    height: 660px;
+    background-color: rgba(21, 21, 21, 0.6);
+    z-index: 1;
+}
+
+.faxe .overlay {
+    position: absolute;
+    width: 100%;
+    height: 660px;
+    background-color: rgba(21, 21, 21, 0.6);
+    z-index: 1;
+}
+
+.koldkrigsmuseum:hover .overlay {
+    background-color: rgba(85, 121, 142, 0.9);
+}
+
+.stevns:hover .overlay {
+    background-color: rgba(0, 131, 195, 0.8);
+}
+
+.faxe:hover .overlay {
+    background-color: rgba(0, 186, 174, 0.8);
+}
+
+.beskrivelse h1 {
+    font-size: 3em;
+}
+
+
+#oplev_kalklandet h1 {
+    margin-top: 4vw;
+    z-index: 2;
+    padding: .3vw;
+    font-size: 4em;
+    margin-bottom: vw;
+}
+
+#oplev_kalklandet h2 {
+    margin-top: 7vw;
+    z-index: 2;
+    padding: .3vw;
+    font-size: 2.3em;
+}
+
+#oplev_kalklandet .content {
+    z-index: 4;
+}
+
+#oplev_kalklandet p {
+    z-index: 2;
+    padding: 1vw;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#oplev_kalklandet .three-row {
+    display: grid;
+    justify-items: center;
+}
+
+
+
+.oplev_blok {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.3;
+    transition: .3s;
+    width: 100%;
+    color: #efeeee;
+}
+
+.oplev_blok h2 {
+    color: #efeeee;
+}
+
+.oplev_blok:hover {
+
+    transition: .3s;
+}
+
+.oplev_blok h1 {
+    margin-top: 0;
+}
+
+.oplev_blok img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 50px;
+}
+
+
+.koldkrigsmuseum {
+    background-image: url(img/stevnsfort.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 410px;
+    height: 660px;
+    color: #efeeee;
+}
+
+
+
+.stevns {
+    background-image: url(img/stevnsklint.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 410px;
+    height: 660px;
+    color: #efeeee;
+}
+
+.faxe {
+    background-image: url(img/faxe.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 410px;
+    height: 660px;
+    color: #efeeee;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 500px;
+}
+
+nav {
+    background-color: rgba(242, 242, 242, 0.9);
+    width: 100vw;
+    z-index: 10;
+    margin-bottom: 4vw;
+    align-items: center;
+}
+
+.navbar {
+    list-style: none;
+    /*    display: flex;*/
+    z-index: 10;
+    padding: 1vw;
+}
+
+.navbar-mobile img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.navbar-mobile {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: right;
+    display: none;
+
+
+}
+
+.navbar-mobile a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-mobile .top {
+    /*    background-color: rgb(242, 242, 242);*/
+    width: 100vw;
+    padding: 4vw;
+}
+
+.navbar-mobile .top li {
+    margin: 0;
+}
+
+
+
+
+.fas {
+    font-size: 200%;
+    z-index: 999;
+    grid-area: "knap";
+}
+
+
+.inner {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    text-align: right;
+    background-color: rgb(242, 242, 242);
+}
+
+.fa-times {
+    padding-right: 2vw;
+}
+
+.grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    list-style: none;
+
+}
+
+.burger_knap span {}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.nav-item {
+    margin-top: .7vw;
+}
+
+#begivenheder .my-container {
+    padding: 10px 10px 0;
+}
+
+
+#aktiviteter {
+    display: grid;
+    justify-items: center;
+    padding: 10px 10px 0;
+}
+
+.akt {
+    text-align: center;
+}
+
+.overflow {
+    overflow: hidden;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 800px;
+}
+
+.akt div {
+    padding: 1vw;
+}
+
+.akt div img {
+    width: 300px;
+}
+
+.dato {
+    color: #a1a9af;
+    font-size: 12px;
+    margin: 15px 0 0;
+}
+
+.button {
+    background-color: #003333;
+    border: 1px solid #003333;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 15px 0 0;
+    min-width: 113px;
+    padding: 0 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition-delay: 0s;
+    transition-duration: .3s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+
+}
+
+.filter .button {
+    background-color: rgba(0, 51, 51);
+    border: 1px solid #003333;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 15px 0 0;
+    min-width: 113px;
+    padding: 0 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition-delay: 0s;
+    transition-duration: .3s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    opacity: .5;
+
+}
+
+
+.filter .aktiv {
+    opacity: 1;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+}
+
+.dropdown {
+    display: none;
+    text-align: center;
+    margin-bottom: 4vw;
+}
+
+.priser h1 {
+    text-align: center;
+    z-index: 2;
+    padding: .3vw;
+    font-size: 4em;
+}
+
+.pris-kort {
+    background-color: #fff;
+    border-radius: .8rem;
+    box-shadow: rgba(0, 0, 0, .15) 0 1rem 2.8rem 0;
+    color: #000;
+    display: block;
+    padding: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    min-height: 400px;
+    min-width: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 3vw;
+
+}
+
+.priser .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.pris-kort h4 {
+    font-weight: 900;
+    margin: auto;
+    font-size: 2em;
+}
+
+.pris-kort .kob-billet {
+    text-align: center;
+    width: 100%;
+}
+
+.pris p {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 400;
+}
+
+.kob-billet {
+    text-align: center;
+    width: 100%;
+}
+
+.kob-billet button {
+    border: 1px solid #2a2828;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #2a2828;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 15px 0 0;
+    min-width: 113px;
+    padding: 0 23px;
+    position: relative;
+    transition: .5s;
+}
+
+.kob-billet button:hover {
+    color: white;
+    background: black;
+    transition: .5s;
+}
+
+.undervisning {
+    display: grid;
+    align-items: center;
+}
+
+
+.pris-beskrivelse {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+.pris-kort {
+    text-align: center;
+}
+
+.voksne,
+.stud,
+.born {
+    font-weight: 800;
+}
+
+.tider h1 {
+    text-align: center;
+    z-index: 2;
+    padding: .3vw;
+    font-size: 4em;
+    width: 100%;
+}
+
+.undervisning p {
+    font-weight: 500;
+}
+
+.find-vej {
+    text-align: center;
+    padding: 4vw;
+}
+
+.find-vej h1 {
+    z-index: 2;
+    padding: .3vw;
+    font-size: 4em;
+}
+
+.find-vej img {
+    width: 100%;
+}
+
+.find-vej .my-row {
+    text-align: left;
+}
+
+iframe {
+    border: 1px solid black;
+    width: 100%;
+    overflow: hidden;
+}
+
+.my-row {
+    padding: 1vw;
+}
+
+.billede-txt .button:hover {
+    color: white;
+    text-decoration: none;
+    opacity: .7;
+}
+
+.scroll_center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+    width: 100%;
+}
+
+.scroll {
+    position: absolute;
+    margin-top: 10vw;
+    animation: scrollDown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.scroll_center a {
+    color: white;
+}
+
+.om img {
+    width: 100%;
+}
+
+footer {
+    background-color: #222120;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.29;
+    padding: 0;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    margin: 0;
+    margin-top: 4vw;
+    position: relative;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+
+footer input {
+    color: white;
+    background-color: rgba(0, 0, 255, 0);
+    border: none;
+    border-bottom: 1px white solid;
+    font-weight: 400;
+
+}
+
+footer h3,
+footer p,
+footer h2 {
+    font-weight: 100;
+}
+
+
+footer h3 {
+    font-size: 80%;
+}
+
+footer .top {
+    /*
+    display: grid;
+    justify-items: center;
+    align-items: center;
+*/
+    width: 100%;
+    border-bottom: .01vw solid white;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+    padding-left: 2vw;
+}
+
+footer .top button {
+    border: 1px solid #fcfcfc;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fcfcfc;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 15px 0 0;
+    min-width: 113px;
+    padding: 0 23px;
+    position: relative;
+    margin-left: 2vw;
+}
+
+footer .bottom button {
+    border: 1px solid #fcfcfc;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fcfcfc;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 15px 0 0;
+    min-width: 113px;
+    padding: 0 23px;
+    position: relative;
+
+}
+
+footer .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    padding: 0;
+}
+
+footer .bottom h2 {
+    color: white;
+    font-weight: 300;
+}
+
+footer .bottom p {
+    color: white;
+    font-size: 80%;
+}
+
+
+footer .bottom a {
+    color: white;
+    font-size: 100%;
+    font-weight: 100;
+}
+
+footer .bottom div {
+    padding: 2vw;
+}
+
+footer .bottom .fa-facebook-square,
+.fa-instagram {
+    font-size: 150%;
+}
+
+.fa-instagram {
+    padding-left: 1vw;
+}
+
+.disable {
+    opacity: .5;
+    user-select: none;
+    cursor: not-allowed !important;
+}
+
+figure h1 {
+    width: 100%;
+    max-width: 500px;
+    color: #73C92D;
+    font-style: italic;
+}
+
+.hide-dekstop {
+    display: none;
+}
+
+.content h1 {
+    font-size: 6em;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    .icon {
+        padding: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 520px) {
+    .tider h1 {
+        font-size: 3em;
+    }
+
+    .beskrivelse h1 {
+        font-size: 2em;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 948px) {
+    #intro-header h1 {
+        font-size: 7em;
+    }
+
+    #intro-header-undersider h1 {
+        font-size: 4em;
+    }
+
+    footer .bottom {
+        display: block;
+
+    }
+
+    iframe {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    #intro-header h1 {
+        font-size: 6em;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 800px) {
+    .akt {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        width: 80%;
+        text-align: left;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 710px) {
+    #intro-header h1 {
+        font-size: 5em;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    #intro-header h1 {
+        font-size: 4em;
+    }
+
+    #intro-header-undersider h1 {
+        font-size: 3em;
+    }
+
+    #intro-header-undersider p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    #intro-header h1 {
+        font-size: 3em;
+    }
+
+    #intro-header-undersider h1 {
+        font-size: 2em;
+    }
+
+    figure h1 {
+        margin-top: 20px;
+        font-size: 150%;
+    }
+
+    footer .top {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: grid;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .filter {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #oplev_kalklandet h1 {
+        font-size: 3em;
+    }
+
+    #intro-header-undersider h1 {
+        1em;
+    }
+
+    .beskrivelse h1 {
+        font-size: 1.5em;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 321px) {
+
+    #intro-header h1,
+    #intro-header-undersider h1 {
+        font-size: 1.8em;
+    }
+
+    #intro-header p,
+    #intro-header-undersider p {
+        display: none;
+    }
+
+    .tider h1 {
+        font-size: 2em;
+    }
+
+    .find-vej h1 {
+        font-size: 3em;
+    }
+
+}
+
+/*scroll back to top*/
+.progress-wrap {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.progress-wrap.active-progress {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.progress-wrap::after {
+    position: absolute;
+    font-family: 'unicons';
+    content: '\e84b';
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    color: grey;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.progress-wrap:hover::after {
+    opacity: 0;
+}
+
+.progress-wrap::before {
+    position: absolute;
+    font-family: 'unicons';
+    content: '\e84b';
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    opacity: 0;
+    background-image: linear-gradient(298deg, red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.progress-wrap:hover::before {
+    opacity: 1;
+}
+
+.progress-wrap svg path {
+    fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+    stroke: grey;
+    stroke-width: 4;
+    box-sizing: border-box;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+body.light .progress-wrap {
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+body.light .progress-wrap::after {
+    color: black;
+}
+
+body.light .progress-wrap svg.progress-circle path {
+    stroke: black;
+}
+
+.switch,
+.circle {
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+.switch {
+    width: 80px;
+    height: 4px;
+    border-radius: 27px;
+    background-image: linear-gradient(298deg, var(--red), var(--yellow));
+    position: fixed;
+    right: 50px;
+    top: 75px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 1;
+    z-index: 33333;
+    transition: all 300ms linear;
+}
+
+.circle {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--black-blue-light-3);
+    box-shadow: 0 4px 4px rgba(26, 53, 71, 0.25), 0 0 0 1px rgba(26, 53, 71, 0.07);
+    animation: border-transform 10s linear infinite alternate forwards;
+}
+
+.circle:hover {
+    box-shadow: 0 8px 8px rgba(26, 53, 71, 0.25), 0 0 0 1px rgba(26, 53, 71, 0.07);
+}
+
+.circle:before {
+    position: absolute;
+    font-family: 'unicons';
+    content: '\eac1';
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    opacity: 1;
+    color: var(--grey);
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+.circle:after {
+    position: absolute;
+    font-family: 'unicons';
+    content: '\eb8f';
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    color: var(--yellow);
+    opacity: 0;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+.switched {}
+
+.switched .circle {
+    left: 45px;
+    box-shadow: 0 4px 4px rgba(26, 53, 71, 0.25), 0 0 0 1px rgba(26, 53, 71, 0.07);
+    background: var(--black-blue);
+}
+
+.switched .circle:hover {
+    box-shadow: 0 8px 8px rgba(26, 53, 71, 0.25), 0 0 0 1px rgba(26, 53, 71, 0.07);
+}
+
+.switched .circle:before {
+    opacity: 0;
+}
+
+.switched .circle:after {
+    opacity: 1;
+}
